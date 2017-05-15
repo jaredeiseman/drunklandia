@@ -10,7 +10,7 @@
 h1 {
   font-family: Tiza;
   font-size: 60px;
-  color: #3e4844;
+  color: #000;
   text-shadow: 4px 4px 1px #8af3ff;
   margin-left: 20px;
 }
@@ -37,7 +37,7 @@ h1 {
 }
 
 #nav li a {
-  color: #3e4844;
+  color: #000;
   font-family: Tiza;
 }
 
@@ -63,4 +63,16 @@ h1 {
   height: 400px;
   margin: 0;
   width: 100%;
+  overflow: hidden;
+}
+#carousel-1 img, #carousel-2 img, #carousel-3 img {
+  width: 100%;
+}
+
+#content {
+  margin-top: 50px;
+}
+
+.landing-icon {
+  margin-bottom: 30px;
 }
