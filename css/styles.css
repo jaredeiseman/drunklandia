@@ -1,0 +1,50 @@
+@font-face {
+  src: url(../fonts/tiza.ttf);
+  font-family: Tiza;
+}
+
+h1 {
+  font-family: Tiza;
+  font-size: 60px;
+  color: #3e4844;
+  text-shadow: 4px 4px 1px #8af3ff;
+}
+
+#header {
+  border-bottom: 2px solid black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+#nav li a {
+  color: #3e4844;
+  font-family: Tiza;
+}
+
+#nav li a:hover {
+  padding: 10px 0 3px 0;
+  border-top: 4px solid #8af3ff;
+  border-bottom: 4px solid #c2e812;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-image: url(../img/bg.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
