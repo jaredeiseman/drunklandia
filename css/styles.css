@@ -128,3 +128,14 @@ div.panel.panel-default {
 .about-image {
   width: 250px;
 }
+
+#call-out-button {
+  width:100%;
+  padding: 50px;
+  font-size: 30px;
+  font-family:Tiza;
+  background-color: #fff;
+  color:#000;
+  text-shadow: 0 0 12px #c2e812;
+  border-radius: 0;
+}

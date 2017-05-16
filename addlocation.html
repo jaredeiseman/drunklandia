@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drunklandia</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header">
+        <div class="col-md-6">
+          <h1>Drunklandia</h1>
+        </div>
+        <div class="col-md-6">
+          <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1" id="search-row">
+          <h2>Location Add</h2>
+          <form id="add-location">
+            <div class="form-group">
+              <label for="monday">Monday</label>
+              <select class="form-control" name="monday-start" id="monday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="monday-end" id="monday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="tuesday">Tuesday</label>
+              <select class="form-control" name="tuesday-start" id="tuesday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="tuesday-end" id="tuesday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="Wednesday">Wednesday</label>
+              <select class="form-control" name="wednesday-start" id="wednesday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="wednesday-end" id="wednesday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="tuesday">Thursday</label>
+              <select class="form-control" name="thursday-start" id="thursday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="thursday-end" id="thursday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="tuesday">Friday</label>
+              <select class="form-control" name="friday-start" id="friday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="friday-end" id="friday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="tuesday">Saturday</label>
+              <select class="form-control" name="saturday-start" id="saturday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="saturday-end" id="saturday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <label for="tuesday">Sunday</label>
+              <select class="form-control" name="sunday-start" id="sunday-start">
+                <option>N/A</option>
+                <option value="0"> Before 3:00 PM</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+              </select>
+              <select class="form-control" name="sunday-end" id="sunday-end">
+                <option>N/A</option>
+                <option value="3"> 3:00 PM</option>
+                <option value="4"> 4:00 PM</option>
+                <option value="5"> 5:00 PM</option>
+                <option value="6"> 6:00 PM</option>
+                <option value="7"> 7:00 PM</option>
+                <option value="8"> 8:00 PM</option>
+                <option value="9"> 9:00 PM</option>
+                <option value="10"> 10:00 PM</option>
+                <option value="11"> 11:00 PM</option>
+                <option value="12"> Midnight</option>
+                <option value="1"> 1:00 AM</option>
+                <option value="2"> 2:00 AM</option>
+                <option value="20"> After 2:00 AM</option>
+              </select>
+              <div class="form-group radio">
+                <strong><p>Area:</p></strong>
+                <label>
+                  <input type="radio" name="area" value="nw" id="nw"> Northwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="ne" id="ne"> Northeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="sw" id="sw"> Southwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="se" id="se"> Southeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="n" id="n"> North
+                </label>
+                <label>
+                  <input type="radio" name="area" value="far" id="far"> Too far away to get drunk
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <strong><p>Type:</p></strong>
+                <label>
+                  <input type="checkbox" name="has-food" value="true" id="has-food"> Food
+                </label>
+                <label>
+                  <input type="checkbox" name="has-drink" value="true" id="has-drink"> Drinks
+                </label>
+              </div>
+              <div class="form-group radio">
+                <strong><p>Pricing:</p></strong>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="low"> $
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="medium"> $$
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="high"> $$$
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <strong><p>Other Amenities:</p></strong>
+                <label>
+                  <input type="checkbox" name="outdoor-seating" value="outdoor-seating" id="outdoor-seating"> Outdoor Seating
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="games" id="games"> Games
+                </label>
+                <label>
+                  <input type="checkbox" name="trivia" value="trivia" id="trivia"> Trivia
+                </label>
+                <label>
+                  <input type="checkbox" name="karaoke" value="karaoke" id="karaoke"> Karaoke
+                </label>
+                <label>
+                  <input type="checkbox" name="pool" value="pool" id="pool"> Pool
+                </label>
+                <label>
+                  <input type="checkbox" name="vegan-options" value="vegan-options" id="vegan-options"> Vegan Options
+                </label>
+                <label>
+                  <input type="checkbox" name="gluten-free-options" value="gluten-free-options" id="gluten-free-options"> Gluten Free Options
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="link">Link</label>
+                <input type="text" name="link" id="link" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" class="form-control">
+              </div>
+            </div>
+            <input type="submit" id="add-submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
