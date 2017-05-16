@@ -76,3 +76,7 @@ h1 {
 .landing-icon {
   margin-bottom: 30px;
 }
+
+select {
+  width: 14.25%;
+}
