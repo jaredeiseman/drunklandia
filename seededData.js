@@ -1,4 +1,4 @@
-[
+var x = [
   {
     'name': "Base Camp Brewery",
     'area': "se",
@@ -17,7 +17,7 @@
       'tuesday-start': "3",
       'wednesday-end': "6",
       'wednesday-start': "3"
-    }
+    },
     'description': "$1 off pints",
     'link': "https://basecampbrewingco.com/",
     'pricing': "medium",
@@ -35,7 +35,7 @@
       'monday-end': "6",
       'tuesday-start': "4",
       'tuesday-end': "6",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "6",
       'thursday-start': "4",
       'thursday-end': "6",
@@ -45,7 +45,7 @@
       'saturday-end': "6",
       'sunday-start': "4",
       'sunday-end': "11",
-    }
+    },
     'description': "About 50% off food, $4-$6 drinks.",
     'link': "http://www.bartinipdx.com/",
     'pricing': "medium",
@@ -63,7 +63,7 @@
       'monday-end': "6",
       'tuesday-start': "3",
       'tuesday-end': "6",
-      'wednesday-start': "3"
+      'wednesday-start': "3",
       'wednesday-end': "6",
       'thursday-start': "3",
       'thursday-end': "6",
@@ -73,7 +73,7 @@
       'saturday-end': "6",
       'sunday-start': "3",
       'sunday-end': "6",
-    }
+    },
     'description': "Food, $7 Cocktails, $6 well, $4 drafts",
     'link': "http://www.swankandswine.com/happy-hour/",
     'pricing': "medium",
@@ -91,7 +91,7 @@
       'monday-end': "6",
       'tuesday-start': "4",
       'tuesday-end': "6",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "6",
       'thursday-start': "4",
       'thursday-end': "6",
@@ -101,7 +101,7 @@
       'saturday-end': "6",
       'sunday-start': "4",
       'sunday-end': "20",
-    }
+    },
     'description': "$3-$7 food, $4 wells, $6 wine, $1 off beer",
     'link': "http://touchepdx.com/happy-hour/",
     'pricing': "medium",
@@ -119,7 +119,7 @@
       'monday-end': "12",
       'tuesday-start': "4",
       'tuesday-end': "7",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "7",
       'thursday-start': "4",
       'thursday-end': "7",
@@ -129,7 +129,7 @@
       'saturday-end': "7",
       'sunday-start': "4",
       'sunday-end': "7",
-    }
+    },
     'description': "$1 off drinks, food specials",
     'link': "http://www.popehouselounge.com/new-page/",
     'pricing': "medium",
@@ -147,7 +147,7 @@
       'monday-end': "6",
       'tuesday-start': "3",
       'tuesday-end': "6",
-      'wednesday-start': "3"
+      'wednesday-start': "3",
       'wednesday-end': "6",
       'thursday-start': "3",
       'thursday-end': "6",
@@ -157,7 +157,7 @@
       'saturday-end': "",
       'sunday-start': "10",
       'sunday-end': "12",
-    }
+    },
     'description': "$6 wine, $7 mule, $3.50 beers, $3-7 food",
     'link': "http://www.kellsbrewpub.com/happy-hour",
     'pricing': "medium",
@@ -175,7 +175,7 @@
       'monday-end': "6",
       'tuesday-start': "4",
       'tuesday-end': "6",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "6",
       'thursday-start': "4",
       'thursday-end': "6",
@@ -185,7 +185,7 @@
       'saturday-end': "6",
       'sunday-start': "4",
       'sunday-end': "6",
-    }
+    },
     'description': "$2.50 tacos, $5 House infused liquor.",
     'link': "http://cruzroom.com/",
     'pricing': "medium",
@@ -203,7 +203,7 @@
       'monday-end': "8",
       'tuesday-start': "4",
       'tuesday-end': "8",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "8",
       'thursday-start': "4",
       'thursday-end': "8",
@@ -213,7 +213,7 @@
       'saturday-end': "8",
       'sunday-start': "4",
       'sunday-end': "2",
-    }
+    },
     'description': "$3-$5 food, $1 off mason jar drinks",
     'link': "http://www.swiftloungepdx.com/swiftloungemenu/",
     'pricing': "medium",
@@ -231,7 +231,7 @@
       'monday-end': "",
       'tuesday-start': "4",
       'tuesday-end': "6",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "6",
       'thursday-start': "4",
       'thursday-end': "6",
@@ -241,7 +241,7 @@
       'saturday-end': "6",
       'sunday-start': "",
       'sunday-end': "",
-    }
+    },
     'description': "$2-$6 snacks, $4-$6 drinks",
     'link': "http://www.saucebox.com/happy-hour/",
     'pricing': "low",
@@ -259,7 +259,7 @@
       'monday-end': "7",
       'tuesday-start': "5",
       'tuesday-end': "7",
-      'wednesday-start': "5"
+      'wednesday-start': "5",
       'wednesday-end': "7",
       'thursday-start': "5",
       'thursday-end': "7",
@@ -269,7 +269,7 @@
       'saturday-end': "",
       'sunday-start': "",
       'sunday-end': "",
-    }
+    },
     'description': "$1 off food",
     'link': "http://www.lightningwill.com/menu.html",
     'pricing': "medium",
@@ -287,7 +287,7 @@
       'monday-end': "10",
       'tuesday-start': "",
       'tuesday-end': "",
-      'wednesday-start': ""
+      'wednesday-start': "",
       'wednesday-end': "",
       'thursday-start': "",
       'thursday-end': "",
@@ -297,7 +297,7 @@
       'saturday-end': "",
       'sunday-start': "",
       'sunday-end': "",
-    }
+    },
     'description': "$4 beer and well, $5 wine",
     'link': "http://www.portlandparkside.com/",
     'pricing': "medium",
@@ -315,7 +315,7 @@
       'monday-end': "6",
       'tuesday-start': "3",
       'tuesday-end': "6",
-      'wednesday-start': "3"
+      'wednesday-start': "3",
       'wednesday-end': "6",
       'thursday-start': "3",
       'thursday-end': "6",
@@ -325,7 +325,7 @@
       'saturday-end': "12",
       'sunday-start': "9",
       'sunday-end': "12",
-    }
+    },
     'description': "$5-7 apps, $2 off drinks",
     'link': "http://menu.rockbottom.com/portland",
     'pricing': "medium",
@@ -343,7 +343,7 @@
       'monday-end': "6",
       'tuesday-start': "3",
       'tuesday-end': "6",
-      'wednesday-start': "3"
+      'wednesday-start': "3",
       'wednesday-end': "6",
       'thursday-start': "3",
       'thursday-end': "6",
@@ -353,7 +353,7 @@
       'saturday-end': "6",
       'sunday-start': "3",
       'sunday-end': "6",
-    }
+    },
     'description': "$2 - $6 food, $3 - $7 drinks",
     'link': "http://www.punchbowlsocial.com/location/portland",
     'pricing': "medium",
@@ -371,7 +371,7 @@
       'monday-end': "12",
       'tuesday-start': "11",
       'tuesday-end': "12",
-      'wednesday-start': "11"
+      'wednesday-start': "11",
       'wednesday-end': "12",
       'thursday-start': "11",
       'thursday-end': "12",
@@ -381,7 +381,7 @@
       'saturday-end': "12",
       'sunday-start': "11",
       'sunday-end': "12",
-    }
+    },
     'description': "50% off food menu",
     'link': "http://www.santafetaqueria.com/index.php/menu",
     'pricing': "low",
@@ -399,7 +399,7 @@
       'monday-end': "6",
       'tuesday-start': "3",
       'tuesday-end': "6",
-      'wednesday-start': "3"
+      'wednesday-start': "3",
       'wednesday-end': "6",
       'thursday-start': "3",
       'thursday-end': "6",
@@ -409,7 +409,7 @@
       'saturday-end': "6",
       'sunday-start': "3",
       'sunday-end': "6",
-    }
+    },
     'description': "$4 - $10 food, $6 - $8 cocktails",
     'link': "http://pearltavernpdx.com/wp-content/uploads/2017/05/Happy-Hour-5.4.17-1.pdf",
     'pricing': "high",
@@ -427,7 +427,7 @@
       'monday-end': "6",
       'tuesday-start': "0",
       'tuesday-end': "6",
-      'wednesday-start': "0"
+      'wednesday-start': "0",
       'wednesday-end': "6",
       'thursday-start': "0",
       'thursday-end': "6",
@@ -437,7 +437,7 @@
       'saturday-end': "12",
       'sunday-start': "10",
       'sunday-end': "12",
-    }
+    },
     'description': "$7 - $9 fancy food, $5 cocktails",
     'link': "http://www.headwaterspdx.com/s/Happy-Hour-41517-1-xces.pdf",
     'pricing': "high",
@@ -455,7 +455,7 @@
       'monday-end': "20",
       'tuesday-start': "4",
       'tuesday-end': "20",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "20",
       'thursday-start': "4",
       'thursday-end': "20",
@@ -465,7 +465,7 @@
       'saturday-end': "20",
       'sunday-start': "4",
       'sunday-end': "20",
-    }
+    },
     'description': "Cheaper smaller portions of usually expensive food",
     'link': "https://www.scribd.com/document/348549641/Shift-Drinks-Happy-Hour-Menu-05-16-17",
     'pricing': "medium",
@@ -483,7 +483,7 @@
       'monday-end': "7",
       'tuesday-start': "4",
       'tuesday-end': "7",
-      'wednesday-start': "4"
+      'wednesday-start': "4",
       'wednesday-end': "7",
       'thursday-start': "4",
       'thursday-end': "7",
@@ -493,7 +493,7 @@
       'saturday-end': "7",
       'sunday-start': "4",
       'sunday-end': "7",
-    }
+    },
     'description': "Happy hour food ONLY, $2 - $6",
     'link': "http://www.redstartavern.com/menus/menus.htm",
     'pricing': "medium",

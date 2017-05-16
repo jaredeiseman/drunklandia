@@ -139,3 +139,29 @@ div.panel.panel-default {
   text-shadow: 0 0 12px #c2e812;
   border-radius: 0;
 }
+
+.food-drink {
+  width: 5%;
+}
+
+.amenities {
+  width: 30%;
+}
+
+.amenities img {
+  display: inline-block;
+  width: 10%;
+  margin-right: 4%;
+}
+
+.price {
+  width: 5%;
+}
+
+.area {
+  width: 5%;
+}
+
+.name {
+  vertical-align: center;
+}
