@@ -98,7 +98,8 @@ h1 {
 
 .amenities img {
   display: inline-block;
-  width: 14%;
+  width: 10%;
+  margin-right: 4%;
 }
 
 .price {
@@ -107,4 +108,8 @@ h1 {
 
 .area {
   width: 5%;
+}
+
+.name {
+  vertical-align: center;
 }
