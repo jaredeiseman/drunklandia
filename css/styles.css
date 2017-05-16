@@ -15,6 +15,38 @@ h1 {
   margin-left: 20px;
 }
 
+.about-h2 {
+  font-family: Tiza;
+  text-shadow: 4px 4px 1px #c2e812;
+}
+
+.about-dev {
+  font-family: arvo;
+}
+
+.about-p {
+  font-family: arvo;
+  font-size: 18px;
+}
+
+#about-drunk {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.infoDrinkIcon {
+  width: 75px;
+  float: left;
+  margin-right: 20px;
+}
+
+.infoDrinkIcon2 {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
 #header {
   border-bottom: 2px solid black;
   height: 150px;
@@ -75,6 +107,26 @@ h1 {
 
 .landing-icon {
   margin-bottom: 30px;
+}
+
+.person-info {
+  float: left;
+  margin: 20px;
+}
+
+.polaroid {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 275px;
+}
+
+div.panel.panel-default {
+  border: 0;
+}
+
+.about-image {
+  width: 250px;
 }
 
 #call-out-button {
