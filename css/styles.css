@@ -77,6 +77,13 @@ h1 {
   margin-bottom: 30px;
 }
 
-select {
-  width: 14.25%;
+#call-out-button {
+  width:100%;
+  padding: 50px;
+  font-size: 30px;
+  font-family:Tiza;
+  background-color: #fff;
+  color:#000;
+  text-shadow: 0 0 12px #c2e812;
+  border-radius: 0;
 }
