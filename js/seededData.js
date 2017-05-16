@@ -1,4 +1,4 @@
-var x = [
+var locations = [
   {
     'name': "Base Camp Brewery",
     'area': "se",
@@ -24,8 +24,8 @@ var x = [
     'phone-number': "503-477-7479",
     'address': "930 SE Oak St, Portland, OR 97214",
     'other-amenities': ['outdoor-seating', 'trivia'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Bartini",
@@ -52,8 +52,8 @@ var x = [
     'phone-number': "503-224-7919",
     'address': "2108 NW Glisan St, Portland, OR 97210",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Swine Moonshine and Whiskey Bar",
@@ -80,8 +80,8 @@ var x = [
     'phone-number': "503-943 5844",
     'address': "808 SW Taylor St, Portland, OR 97205",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Touche",
@@ -108,8 +108,8 @@ var x = [
     'phone-number': "(503) 221-1150",
     'address': "1425 NW Glisan St, Portland, OR 97209",
     'other-amenities': ['outdoor-seating', 'games', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Pope House Bourbon Lounge",
@@ -136,8 +136,8 @@ var x = [
     'phone-number': "(503) 222-1056",
     'address': "2075 NW Glisan St, Portland, OR 97209",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Kell's Brew Pub",
@@ -164,8 +164,8 @@ var x = [
     'phone-number': "(503) 719-7175",
     'address': "210 NW 21st Ave, Portland, OR 97209",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Cruzroom",
@@ -192,8 +192,8 @@ var x = [
     'phone-number': "(503) 208-3483",
     'address': "2338 NE Alberta St, Portland, OR 97211",
     'other-amenities': ['trivia', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Swift Lounge",
@@ -220,8 +220,8 @@ var x = [
     'phone-number': "(503) 288-3333",
     'address': "1932 NE Broadway St, Portland, OR 97232",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Saucebox",
@@ -248,8 +248,8 @@ var x = [
     'phone-number': "(503) 241-3393",
     'address': "214 SW Broadway, Portland, OR 97205",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Lightning Will",
@@ -276,8 +276,8 @@ var x = [
     'phone-number': "(503) 327-8203",
     'address': "305 NW 21st Ave, Portland, OR 97209",
     'other-amenities': ['outdoor-seating', 'games', 'gluten-free-options'],
-    'has-drink': "false",
-    'has-food': "true",
+    'has-drink': false,
+    'has-food': true,
   },
   {
     'name': "Parkside",
@@ -304,7 +304,7 @@ var x = [
     'phone-number': "(503) 719-6826",
     'address': "2135 N Willis Blvd, Portland, OR 97217",
     'other-amenities': ['outdoor-seating', 'games', 'trivia'],
-    'has-drink': "true",
+    'has-drink': true,
     'has-food': false,
   },
   {
@@ -332,8 +332,8 @@ var x = [
     'phone-number': "(503) 796-2739",
     'address': "206 SW Morrison St, Portland, OR 97204",
     'other-amenities': ['outdoor-seating', 'gluten-free-options', 'games'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Punch Bowl Social",
@@ -360,8 +360,8 @@ var x = [
     'phone-number': "(503) 334-0360",
     'address': "340 SW Morrison St, Portland, OR 97204",
     'other-amenities': ['outdoor-seating', 'games', 'karaoke', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Santa Fe Taqueria",
@@ -388,8 +388,8 @@ var x = [
     'phone-number': "(503) 220-0406",
     'address': "831 NW 23rd Ave, Portland, OR 97210",
     'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
-    'has-drink': "false",
-    'has-food': "true",
+    'has-drink': false,
+    'has-food': true,
   },
   {
     'name': "Pearl Tavern",
@@ -416,8 +416,8 @@ var x = [
     'phone-number': "(503) 954-3796",
     'address': "231 NW 11th Ave, Portland, OR 97209",
     'other-amenities': ['vegan-options', 'gluten-free-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Headwaters",
@@ -444,8 +444,8 @@ var x = [
     'phone-number': "(503) 790-7752",
     'address': "1001 SW Broadway, Portland, OR 97205",
     'other-amenities': [''],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Shift Drinks",
@@ -472,8 +472,8 @@ var x = [
     'phone-number': "(503) 922-3933",
     'address': "1200 SW Morrison St, Portland, OR 97205",
     'other-amenities': ['vegan-options'],
-    'has-drink': "true",
-    'has-food': "true",
+    'has-drink': true,
+    'has-food': true,
   },
   {
     'name': "Red Star Tavern",
@@ -500,7 +500,7 @@ var x = [
     'phone-number': "(503) 222-0005",
     'address': "503 SW Alder St, Portland, OR 97204",
     'other-amenities': ['gluten-free-options', 'vegan-options'],
-    'has-drink': "false",
-    'has-food': "true",
+    'has-drink': false,
+    'has-food': true,
   }
-]
+];

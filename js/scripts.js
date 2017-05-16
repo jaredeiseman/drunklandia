@@ -1,3 +1,7 @@
+function Data (location) {
+  this.locations = [];
+}
+
 function Location (location) {
   this["name"] = location.name;
   this["address"] = location.address;
@@ -25,6 +29,12 @@ function Location (location) {
   this["link"] = location['link'];
   this["pricing"] = location['pricing'];
   this["description"] = location['description'];
+}
+
+Data.prototype.build = function(data, locations) {
+  locations.forEach(function(location) {
+    data.locations.push(new Location(location));
+  });
 }
 
 function cleanAddInput (data) {
@@ -67,13 +77,57 @@ function getFormData($form){
 }
 
 $(document).ready(function() {
+  var data = new Data();
+  data.build(data, locations);
+  console.log(data);
+
   $('#add-location').submit(function(event) {
     event.preventDefault();
 
     var data = getFormData($('#add-location'));
     data = cleanAddInput(data);
-    var location = new Location(data);
-    console.log(location);
 
+  });
+
+  data.locations.forEach(function(location, index) {
+    $('#location-results').append('<tr id="item-' + index + '"class="location-panel">' +
+      '<td class="food-drink">' + //conditional image
+      '</td>' +
+      '<td class="food-drink">' + //conditional image
+      '</td>' +
+      '<td class="name"><span>' + location.name + '</span>' +
+      '</td>' +
+      '<td class="price">' + //conditional dollar signs
+      '</td>' +
+      '<td class="area">' + location.area.toUpperCase() +
+      '</td>' +
+      '<td class="amenities">' + //conditional images for amenities
+      '</td>' +
+      '</tr>');
+    if (location['has-drink'] === true) {
+      $('#item-' + index + ' .food-drink').first().append('<img src="img/drinkicon.ico" class="img-responsive" alt="" />');
+    }
+    if (location['has-food'] === true) {
+      $('#item-' + index + ' .food-drink').last().append('<img src="img/foodicon.png" class="img-responsive" alt="" />');
+    }
+    switch(location.pricing) {
+      case 'low':
+        $('.price').last().text('$');
+        break;
+      case 'medium':
+        $('.price').last().text('$$');
+        break;
+      case 'high':
+        $('.price').last().text('$$$');
+        break;
+      default:
+        break;
+    }
+
+    location['other-amenities'].forEach(function(amenity) {
+      if (amenity) {
+        $('.amenities').last().append('<img src="img/' + amenity + '.png"  alt="" />');
+      }
+    });
   });
 });
