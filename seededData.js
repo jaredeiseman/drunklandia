@@ -1,50 +1,196 @@
-function Location (location) {
-  this["name"]: location.name;
-  this["address"]: location.address;
-  this["phone-number]": location.phoneNumber;
-  this["area"]: location.area;
-  this["days"]: {
-    "monday": {
-      "start-time": location.monday.startTime,
-      "end-time": location.monday.endTime,
-    },
-    "tuesday": {
-      "start-time": location.tuesday.startTime,
-      "end-time": location.tuesday.endTime
-    },
-    "wednesday": {
-      "start-time": location.wednesday.startTime,
-      "end-time": location.wednesday.endTime
-    },
-    "thursday": {
-      "start-time": location.thursday.startTime,
-      "end-time": location.thursday.endTime
-    },
-    "friday": {
-      "start-time": location.friday.startTime,
-      "end-time": location.friday.endTime
-    },
-    "saturday": {
-      "start-time": location.saturday.startTime,
-      "end-time": location.saturday.endTime
-    },
-    "sunday": {
-      "start-time": location.sunday.startTime,
-      "end-time": location.sunday.endTime
-    }
-  };
-  this["has-food"]: location.hasFood,
-  this["has-drink"]: location.hasDrink,
-  this["other-amenities"]: {
-    "outdoor-seating": location.other.outdoorSeating,
-    "games": location.other.games,
-    "trivia": location.other.trivia,
-    "karaoke": location.other.karaoke,
-    "pool": location.other.pool,
-    "vegan-options": location.other.veganOptions,
-    "gluten-free-options": location.other.glutenFreeOptions
-  };
-  this["link"]: location.link;
-  this["pricing"]: location.pricing;
-  this["description"]: location.description;
-}
+{
+  'name': "Base Camp Brewery",
+  'area': "se",
+  'hours': {
+    'friday-end': "6",
+    'friday-start': "3",
+    'monday-end': "10",
+    'monday-start': "0",
+    'saturday-end': "3",
+    'saturday-start': "0",
+    'sunday-end': "3",
+    'sunday-start': "0",
+    'thursday-end': "6",
+    'thursday-start': "3",
+    'tuesday-end': "6",
+    'tuesday-start': "3",
+    'wednesday-end': "6",
+    'wednesday-start': "3"
+  }
+  'description': "$1 off pints",
+  'link': "https://basecampbrewingco.com/",
+  'pricing': "medium",
+  'phone-number': "503-477-7479",
+  'address': "930 SE Oak St, Portland, OR 97214",
+  'other-amenities': ['outdoor-seating', 'trivia'],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "Bartini",
+  'area': "nw",
+  'hours': {
+    'monday-start': "4",
+    'monday-end': "6",
+    'tuesday-start': "4",
+    'tuesday-end': "6",
+    'wednesday-start': "4"
+    'wednesday-end': "6",
+    'thursday-start': "4",
+    'thursday-end': "6",
+    'friday-start': "4",
+    'friday-end': "6",
+    'saturday-start': "4",
+    'saturday-end': "6",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "About 50% off food, $4-$6 drinks.",
+  'link': "http://www.bartinipdx.com/",
+  'pricing': "medium",
+  'phone-number': "503-224-7919",
+  'address': "2108 NW Glisan St, Portland, OR 97210",
+  'other-amenities': ['outdoor-seating', 'vegan-options', 'gluten-free-options'],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "",
+  'area': "",
+  'hours': {
+    'monday-start': "",
+    'monday-end': "",
+    'tuesday-start': "",
+    'tuesday-end': "",
+    'wednesday-start': ""
+    'wednesday-end': "",
+    'thursday-start': "",
+    'thursday-end': "",
+    'friday-start': "",
+    'friday-end': "",
+    'saturday-start': "",
+    'saturday-end': "",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "",
+  'link': "",
+  'pricing': "",
+  'phone-number': "",
+  'address': "",
+  'other-amenities': [''],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "",
+  'area': "",
+  'hours': {
+    'monday-start': "",
+    'monday-end': "",
+    'tuesday-start': "",
+    'tuesday-end': "",
+    'wednesday-start': ""
+    'wednesday-end': "",
+    'thursday-start': "",
+    'thursday-end': "",
+    'friday-start': "",
+    'friday-end': "",
+    'saturday-start': "",
+    'saturday-end': "",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "",
+  'link': "",
+  'pricing': "",
+  'phone-number': "",
+  'address': "",
+  'other-amenities': [''],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "",
+  'area': "",
+  'hours': {
+    'monday-start': "",
+    'monday-end': "",
+    'tuesday-start': "",
+    'tuesday-end': "",
+    'wednesday-start': ""
+    'wednesday-end': "",
+    'thursday-start': "",
+    'thursday-end': "",
+    'friday-start': "",
+    'friday-end': "",
+    'saturday-start': "",
+    'saturday-end': "",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "",
+  'link': "",
+  'pricing': "",
+  'phone-number': "",
+  'address': "",
+  'other-amenities': [''],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "",
+  'area': "",
+  'hours': {
+    'monday-start': "",
+    'monday-end': "",
+    'tuesday-start': "",
+    'tuesday-end': "",
+    'wednesday-start': ""
+    'wednesday-end': "",
+    'thursday-start': "",
+    'thursday-end': "",
+    'friday-start': "",
+    'friday-end': "",
+    'saturday-start': "",
+    'saturday-end': "",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "",
+  'link': "",
+  'pricing': "",
+  'phone-number': "",
+  'address': "",
+  'other-amenities': [''],
+  'has-drink': "true",
+  'has-food': "true",
+},
+{
+  'name': "",
+  'area': "",
+  'hours': {
+    'monday-start': "",
+    'monday-end': "",
+    'tuesday-start': "",
+    'tuesday-end': "",
+    'wednesday-start': ""
+    'wednesday-end': "",
+    'thursday-start': "",
+    'thursday-end': "",
+    'friday-start': "",
+    'friday-end': "",
+    'saturday-start': "",
+    'saturday-end': "",
+    'sunday-start': "4",
+    'sunday-end': "11",
+  }
+  'description': "",
+  'link': "",
+  'pricing': "",
+  'phone-number': "",
+  'address': "",
+  'other-amenities': [''],
+  'has-drink': "true",
+  'has-food': "true",
+},
