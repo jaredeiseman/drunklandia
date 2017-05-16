@@ -165,3 +165,55 @@ div.panel.panel-default {
 .name {
   vertical-align: center;
 }
+
+.sidebar-h2 {
+  font-family: Tiza;
+  font-size: 40px;
+  color: #000;
+  text-shadow: 4px 4px 1px #ba36d0;
+  padding-left: 10px;
+}
+
+.lead {
+  font-family: arvo;
+  font-size: 18px;
+}
+
+td {
+  font-family: arvo;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.key-icon {
+  width: 17%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.key-text {
+  font-family: Arvo;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#key {
+  border: 1px solid #ba36d0;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.table-div img {
+  float: left;
+  width: 15%;
+  clear: both;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.table-div p {
+  float: right;
+  width: 70%;
+  margin-top: 25px;
+}
