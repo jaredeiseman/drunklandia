@@ -50,7 +50,7 @@
           <img src="img/gluten-free-options.png" class="key-icon"><p class="key-text"> Gluten-Free Options </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="results-content">
         <!-- sidebar -->
         <div class="col-md-2" id="filter">
           <form id="filter-form">
@@ -118,7 +118,11 @@
                 <option value="2700">3:00 am</option>
               </select>
             </div> -->
+            <!-- <br> -->
             <button type="submit" id="filter-button">Filter Your Search</button>
+            <br><br>
+              <p class="about-p">Don't see your favorite happy hour place in our list? Click below to add it!</p>
+            <button type="button" id="add-location-button">Add Location</button>
           </form>
         </div>
         <div class="col-md-10" id="main-content">
@@ -143,6 +147,643 @@
           </table>
         </div>
       </div>
+
+      <div class="row" id="addLocationForm">
+        <div class="col-md-10 col-md-offset-1">
+          <h2 id="location-add-h2">Location Add</h2>
+          <form id="add-location">
+            <div class="form-group">
+              <label for="monday">Monday</label>
+              <select class="form-control" name="monday-start" id="monday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="monday-end" id="monday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="tuesday">Tuesday</label>
+              <select class="form-control" name="tuesday-start" id="tuesday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="tuesday-end" id="tuesday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="Wednesday">Wednesday</label>
+              <select class="form-control" name="wednesday-start" id="wednesday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="wednesday-end" id="wednesday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="tuesday">Thursday</label>
+              <select class="form-control" name="thursday-start" id="thursday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="thursday-end" id="thursday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="tuesday">Friday</label>
+              <select class="form-control" name="friday-start" id="friday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="friday-end" id="friday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="tuesday">Saturday</label>
+              <select class="form-control" name="saturday-start" id="saturday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="saturday-end" id="saturday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <label for="tuesday">Sunday</label>
+              <select class="form-control" name="sunday-start" id="sunday-start" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <select class="form-control" name="sunday-end" id="sunday-end" required>
+                <option></option>
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+              <div class="form-group radio">
+                <strong><p>Area:</p></strong>
+                <label>
+                  <input type="radio" name="area" value="nw" id="nw" required> Northwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="ne" id="ne"> Northeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="sw" id="sw"> Southwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="se" id="se"> Southeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="n" id="n"> North
+                </label>
+                <label>
+                  <input type="radio" name="area" value="far" id="far"> Too far away to get drunk
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <strong><p>Type:</p></strong>
+                <label>
+                  <input type="checkbox" name="has-food" value="true" id="has-food"> Food
+                </label>
+                <label>
+                  <input type="checkbox" name="has-drink" value="true" id="has-drink"> Drinks
+                </label>
+              </div>
+              <div class="form-group radio">
+                <strong><p>Pricing:</p></strong>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="low" required> $
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="medium"> $$
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="high"> $$$
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <strong><p>Other Amenities:</p></strong>
+                <label>
+                  <input type="checkbox" name="outdoor-seating" value="outdoor-seating" id="outdoor-seating"> Outdoor Seating
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="games" id="games"> Games
+                </label>
+                <label>
+                  <input type="checkbox" name="trivia" value="trivia" id="trivia"> Trivia
+                </label>
+                <label>
+                  <input type="checkbox" name="karaoke" value="karaoke" id="karaoke"> Karaoke
+                </label>
+                <label>
+                  <input type="checkbox" name="pool" value="pool" id="pool"> Pool
+                </label>
+                <label>
+                  <input type="checkbox" name="vegan-options" value="vegan-options" id="vegan-options"> Vegan Options
+                </label>
+                <label>
+                  <input type="checkbox" name="gluten-free-options" value="gluten-free-options" id="gluten-free-options"> Gluten Free Options
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="link">Link</label>
+                <input type="text" name="link" id="link" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" class="form-control" required>
+              </div>
+            </div>
+            <input type="submit" id="add-submit">
+          </form>
+        </div>
+      </div>
+
     </div>
     <!-- Modal -->
     <div class="modal fade" id="detailed-description" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

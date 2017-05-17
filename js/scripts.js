@@ -292,7 +292,21 @@ $(document).ready(function() {
 
   $('#add-location').submit(function(event) {
     event.preventDefault();
-    var data = getFormData($('#add-location'));
-    data = cleanAddInput(data);
+    var formData = getFormData($('#add-location'));
+    formData = cleanAddInput(formData);
+    formData = new Location(formData);
+
+    data.locations.push(formData);
+
+    $("#results-content").show();
+    $("#addLocationForm").hide();
+    $('#location-results').empty();
+    displayData(data.locations);
   });
+
+  $("#add-location-button").click(function() {
+    $("#results-content").hide();
+    $("#addLocationForm").show();
+  })
+
 });
