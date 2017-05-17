@@ -76,6 +76,61 @@ function getFormData($form){
     return indexed_array;
 }
 
+String.prototype.convertTime = function() {
+  var showtime = parseInt(this);
+  if (showtime >= 2500) {
+    showtime = showtime - 2400;
+    showtime = showtime.toString();
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "am";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "am";
+    }
+    return showtime;
+  } else if (showtime >= 2400) {
+    showtime = showtime - 1200;
+    showtime = showtime.toString();
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "am";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "am";
+    }
+    return showtime;
+  } else if (showtime > 1300) {
+    showtime = showtime - 1200;
+    showtime = showtime.toString();
+    //cut off the last 2 characters of the string and save them in endOfString variable
+    //the beginning of the string + ":" + endOfString + "pm"
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "pm";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "pm";
+    }
+    return showtime;
+  } else if (showtime >= 1200 && showtime < 1300) {
+    showtime = showtime.toString();
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "pm";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "pm";
+    }
+    return showtime;
+  } else {
+    showtime = showtime.toString();
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "am";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "am";
+    }
+    return showtime;
+  }
+}
+
 $(document).ready(function() {
   var data = new Data();
   data.build(data, locations);
@@ -146,7 +201,25 @@ $(document).ready(function() {
       $("#deal").text("Deal: " + location['description']);
 
       if (location['hours']['monday-start'] != "") {
-        $("#schedule").append("<li>" + "Monday: " + location['hours']['monday-start'] + " - " + location['hours']['monday-end'] + "</li>")
+        $("#schedule").append("<li>" + "Monday: " + location['hours']['monday-start'].convertTime() + " - " + location['hours']['monday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['tuesday-start'] != "") {
+        $("#schedule").append("<li>" + "Tuesday: " + location['hours']['tuesday-start'].convertTime() + " - " + location['hours']['tuesday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['wednesday-start'] != "") {
+        $("#schedule").append("<li>" + "Wednesday: " + location['hours']['wednesday-start'].convertTime() + " - " + location['hours']['wednesday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['thursday-start'] != "") {
+        $("#schedule").append("<li>" + "Thursday: " + location['hours']['thursday-start'].convertTime() + " - " + location['hours']['thursday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['friday-start'] != "") {
+        $("#schedule").append("<li>" + "Friday: " + location['hours']['friday-start'].convertTime() + " - " + location['hours']['friday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['saturday-start'] != "") {
+        $("#schedule").append("<li>" + "Saturday: " + location['hours']['saturday-start'].convertTime() + " - " + location['hours']['saturday-end'].convertTime() + "</li>")
+      }
+      if (location['hours']['sunday-start'] != "") {
+        $("#schedule").append("<li>" + "Sunday: " + location['hours']['sunday-start'].convertTime() + " - " + location['hours']['sunday-end'].convertTime() + "</li>")
       }
 
 

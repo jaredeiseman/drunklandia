@@ -219,6 +219,10 @@ td {
   text-align: left;
 }
 
+#happy-info ul li {
+  margin-left: -40px;
+}
+
 /*#modal-icons img {
   width: 35px;
   padding-right: 10px;
