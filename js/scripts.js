@@ -299,6 +299,7 @@ $(document).ready(function() {
     data.locations.push(formData);
 
     $("#results-content").show();
+    $('#key').show();
     $("#addLocationForm").hide();
     $('#location-results').empty();
     displayData(data.locations);
@@ -306,6 +307,7 @@ $(document).ready(function() {
 
   $("#add-location-button").click(function() {
     $("#results-content").hide();
+    $('#key').hide();
     $("#addLocationForm").show();
   })
 

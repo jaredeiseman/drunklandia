@@ -149,9 +149,106 @@
       </div>
 
       <div class="row" id="addLocationForm">
-        <div class="col-md-10 col-md-offset-1">
-          <h2 id="location-add-h2">Location Add</h2>
-          <form id="add-location">
+        <form id="add-location">
+          <div class="col-md-4 col-md-offset-2">
+            <h2 id="location-add-h2">Location Add</h2>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="link">Link</label>
+                <input type="text" name="link" id="link" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" class="form-control" required>
+              </div>
+              <br>
+              <div class="form-group radio">
+                <strong><p class="lead">Area:</p></strong>
+                <label>
+                  <input type="radio" name="area" value="nw" id="nw" required> Northwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="ne" id="ne"> Northeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="sw" id="sw"> Southwest
+                </label>
+                <label>
+                  <input type="radio" name="area" value="se" id="se"> Southeast
+                </label>
+                <label>
+                  <input type="radio" name="area" value="n" id="n"> North
+                </label>
+                <label>
+                  <input type="radio" name="area" value="far" id="far"> Too far away to get drunk
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <br>
+                <strong><p class="lead">What kind of happy hour specials are available:</p></strong>
+                <label>
+                  <input type="checkbox" name="has-food" value="true" id="has-food"> Food
+                </label>
+                <label>
+                  <input type="checkbox" name="has-drink" value="true" id="has-drink"> Drinks
+                </label>
+              </div>
+              <div class="form-group radio">
+                <br>
+                <strong><p class="lead">Pricing:</p></strong>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="low" required> $
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="medium"> $$
+                </label>
+                <label>
+                  <input type="radio" name="pricing" value="true" id="high"> $$$
+                </label>
+              </div>
+              <div class="form-group checkbox">
+                <br>
+                <strong><p class="lead">Other Amenities:</p></strong>
+                <label>
+                  <input type="checkbox" name="outdoor-seating" value="outdoor-seating" id="outdoor-seating"> Outdoor Seating
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="games" id="games"> Games
+                </label>
+                <label>
+                  <input type="checkbox" name="trivia" value="trivia" id="trivia"> Trivia
+                </label>
+                <label>
+                  <input type="checkbox" name="karaoke" value="karaoke" id="karaoke"> Karaoke
+                </label>
+                <label>
+                  <input type="checkbox" name="pool" value="pool" id="pool"> Pool
+                </label>
+                <label>
+                  <input type="checkbox" name="vegan-options" value="vegan-options" id="vegan-options"> Vegan Options
+                </label>
+                <label>
+                  <input type="checkbox" name="gluten-free-options" value="gluten-free-options" id="gluten-free-options"> Gluten Free Options
+                </label>
+              </div>
+
+          </div>
+          <div class="col-md-4">
+            <br>
+            <br>
+            <br>
+            <p class="lead"><b>When does happy hour start and end for each day of the week:</b></p>
             <div class="form-group">
               <label for="monday">Monday</label>
               <select class="form-control" name="monday-start" id="monday-start" required>
@@ -692,98 +789,12 @@
                 <option value="2630">2:30 am</option>
                 <option value="2700">3:00 am</option>
               </select>
-              <div class="form-group radio">
-                <strong><p>Area:</p></strong>
-                <label>
-                  <input type="radio" name="area" value="nw" id="nw" required> Northwest
-                </label>
-                <label>
-                  <input type="radio" name="area" value="ne" id="ne"> Northeast
-                </label>
-                <label>
-                  <input type="radio" name="area" value="sw" id="sw"> Southwest
-                </label>
-                <label>
-                  <input type="radio" name="area" value="se" id="se"> Southeast
-                </label>
-                <label>
-                  <input type="radio" name="area" value="n" id="n"> North
-                </label>
-                <label>
-                  <input type="radio" name="area" value="far" id="far"> Too far away to get drunk
-                </label>
-              </div>
-              <div class="form-group checkbox">
-                <strong><p>Type:</p></strong>
-                <label>
-                  <input type="checkbox" name="has-food" value="true" id="has-food"> Food
-                </label>
-                <label>
-                  <input type="checkbox" name="has-drink" value="true" id="has-drink"> Drinks
-                </label>
-              </div>
-              <div class="form-group radio">
-                <strong><p>Pricing:</p></strong>
-                <label>
-                  <input type="radio" name="pricing" value="true" id="low" required> $
-                </label>
-                <label>
-                  <input type="radio" name="pricing" value="true" id="medium"> $$
-                </label>
-                <label>
-                  <input type="radio" name="pricing" value="true" id="high"> $$$
-                </label>
-              </div>
-              <div class="form-group checkbox">
-                <strong><p>Other Amenities:</p></strong>
-                <label>
-                  <input type="checkbox" name="outdoor-seating" value="outdoor-seating" id="outdoor-seating"> Outdoor Seating
-                </label>
-                <label>
-                  <input type="checkbox" name="games" value="games" id="games"> Games
-                </label>
-                <label>
-                  <input type="checkbox" name="trivia" value="trivia" id="trivia"> Trivia
-                </label>
-                <label>
-                  <input type="checkbox" name="karaoke" value="karaoke" id="karaoke"> Karaoke
-                </label>
-                <label>
-                  <input type="checkbox" name="pool" value="pool" id="pool"> Pool
-                </label>
-                <label>
-                  <input type="checkbox" name="vegan-options" value="vegan-options" id="vegan-options"> Vegan Options
-                </label>
-                <label>
-                  <input type="checkbox" name="gluten-free-options" value="gluten-free-options" id="gluten-free-options"> Gluten Free Options
-                </label>
-              </div>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" name="address" id="address" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label for="link">Link</label>
-                <input type="text" name="link" id="link" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label for="description">Description</label>
-                <input type="text" name="description" id="description" class="form-control" required>
-              </div>
             </div>
-            <input type="submit" id="add-submit">
-          </form>
-        </div>
-      </div>
 
+            <input type="submit" id="add-submit">
+          </div>
+        </form>
+      </div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="detailed-description" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
