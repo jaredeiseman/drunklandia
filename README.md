@@ -11,6 +11,7 @@
 | The user wants to filter results by location. | Checks box to filter search by 'NE' | Results show 'Cruzroom' and 'Swift Lounge' |
 | The user wants to filter results by price. | Checks box to filter search by '$' | Results show 'Saucebox' and 'Santa Fe Taqueria' |
 | The user wants to filter results by amenities | Checks box to filter search for 'Trivia' | Results show 'Basecamp Brewery,' 'Cruzroom,' and 'Parkside' |
+| The user wants to add their favorite happy hour to the master list | Click on 'Add Location' button, fills out form with location information | After clicking on 'Submit' their location will be added to the bottom of the master happy hour list |
 
 ## Set Up & Installation:
 * Visit the following link: <https://jaredeiseman.github.io/drunklandia/>
@@ -21,7 +22,7 @@ OR you can:
 * Open the file folder and double click on 'index.html'
 
 ## Bugs:
-No known bugs at this time.
+The only known bug at this time happens when the user filters using multiple categories at one time. The page will output everything that applies for each of those categories, not just locations where those categories intersect. 
 
 ## Support:
 If you experience any difficulties, feel free to contact any of the developers:
