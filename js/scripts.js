@@ -129,5 +129,27 @@ $(document).ready(function() {
         $('.amenities').last().append('<img src="img/' + amenity + '.png"  alt="" />');
       }
     });
+
+    function resetModal() {
+      $("#menu-link").empty();
+      $("#schedule").empty();
+    }
+
+    $('#item-' + index).click(function() {
+      $('#detailed-description').modal('show')
+      $("#detailed-location-name").text(location.name);
+      $("#address-span").text(location.address);
+      $("#phone-span").text(location['phone-number']);
+      resetModal();
+      $("#menu-link").append('<a href="' + location['link'] + '">menu link</a>');
+      $("#deal").text("Deal: " + location['description']);
+      $("#deal").text("Deal: " + location['description']);
+
+      if (location['hours']['monday-start'] != "") {
+        $("#schedule").append("<li>" + "Monday: " + location['hours']['monday-start'] + " - " + location['hours']['monday-end'] + "</li>")
+      }
+
+
+    })
   });
 });

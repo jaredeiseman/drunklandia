@@ -208,3 +208,27 @@ td {
 .keyrow {
   display: block;
 }
+
+#modal-image {
+  width: 150px;
+  padding-bottom: 10px;
+}
+
+#happy-info ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+/*#modal-icons img {
+  width: 35px;
+  padding-right: 10px;
+}*/
+
+#modal-icons p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.modal-content {
+  font-family: Arvo;
+}
