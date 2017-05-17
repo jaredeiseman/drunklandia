@@ -337,7 +337,7 @@ var locations = [
   },
   {
     'name': "Punch Bowl Social",
-    'area': "NW",
+    'area': "nw",
     'hours': {
       'monday-start': "3",
       'monday-end': "6",
@@ -365,7 +365,7 @@ var locations = [
   },
   {
     'name': "Santa Fe Taqueria",
-    'area': "NW",
+    'area': "nw",
     'hours': {
       'monday-start': "11",
       'monday-end': "12",
@@ -393,7 +393,7 @@ var locations = [
   },
   {
     'name': "Pearl Tavern",
-    'area': "SW",
+    'area': "sw",
     'hours': {
       'monday-start': "3",
       'monday-end': "6",
@@ -421,7 +421,7 @@ var locations = [
   },
   {
     'name': "Headwaters",
-    'area': "SW",
+    'area': "sw",
     'hours': {
       'monday-start': "0",
       'monday-end': "6",
@@ -449,7 +449,7 @@ var locations = [
   },
   {
     'name': "Shift Drinks",
-    'area': "SW",
+    'area': "sw",
     'hours': {
       'monday-start': "4",
       'monday-end': "20",
@@ -477,7 +477,7 @@ var locations = [
   },
   {
     'name': "Red Star Tavern",
-    'area': "SW",
+    'area': "sw",
     'hours': {
       'monday-start': "4",
       'monday-end': "7",
