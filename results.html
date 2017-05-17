@@ -52,11 +52,76 @@
       </div>
       <div class="row">
         <!-- sidebar -->
-        <div class="col-md-2" id="sidebar">
-
-
+        <div class="col-md-2" id="filter">
+          <form id="filter-form">
+            <div class="form-group checkbox">
+              <h3>Area:</h3>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="nw">NW</label>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="ne">NE</label>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="sw">SW</label>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="se">SE</label>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="n">N</label>
+              <label class="filter-checkbox"><input type="checkbox" name="area" value="far">Outside Portland Area</label>
+            </div>
+            <div class="form-group checkbox">
+              <h3>Price Range:</h3>
+              <label class="filter-checkbox"><input type="checkbox" name="pricing" value="low">$</label>
+              <label class="filter-checkbox"><input type="checkbox" name="pricing" value="medium">$$</label>
+              <label class="filter-checkbox"><input type="checkbox" name="pricing" value="high">$$$</label>
+            </div>
+            <div class="form-group checkbox">
+              <h3>Amenities:</h3>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="games">Games</label>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="trivia">Trivia</label>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="karaoke">Karaoke</label>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="outdoor-seating">Outdoor Seating</label>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="vegan-options">Vegan Options</label>
+              <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="gluten-free-options">Gluten-Free Options</label>
+            </div>
+            <!-- <div class="form-group">
+              <h3>Select Your Happiest Hour:</h3>
+              <select class="form-control" name="">
+                <option value="1000">10:00 am</option>
+                <option value="1030">10:30 am</option>
+                <option value="1100">11:00 am</option>
+                <option value="1130">11:30 am</option>
+                <option value="1200">12:00 pm</option>
+                <option value="1230">12:30 pm</option>
+                <option value="1300">1:00 pm</option>
+                <option value="1330">1:30 pm</option>
+                <option value="1400">2:00 pm</option>
+                <option value="1430">2:30 pm</option>
+                <option value="1500">3:00 pm</option>
+                <option value="1530">3:30 pm</option>
+                <option value="1600">4:00 pm</option>
+                <option value="1530">4:30 pm</option>
+                <option value="1700">5:00 pm</option>
+                <option value="1730">5:30 pm</option>
+                <option value="1800">6:00 pm</option>
+                <option value="1830">6:30 pm</option>
+                <option value="1900">7:00 pm</option>
+                <option value="1930">7:30 pm</option>
+                <option value="2000">8:00 pm</option>
+                <option value="2030">8:30 pm</option>
+                <option value="2100">9:00 pm</option>
+                <option value="2130">9:30 pm</option>
+                <option value="2200">10:00 pm</option>
+                <option value="2230">10:30 pm</option>
+                <option value="2300">11:00 pm</option>
+                <option value="2330">11:30 pm</option>
+                <option value="2400">12:00 am</option>
+                <option value="2430">12:30 am</option>
+                <option value="2500">1:00 am</option>
+                <option value="2530">1:30 am</option>
+                <option value="2600">2:00 am</option>
+                <option value="2630">2:30 am</option>
+                <option value="2700">3:00 am</option>
+              </select>
+            </div> -->
+            <button type="submit" id="filter-button">Filter Your Search</button>
+          </form>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" id="main-content">
           <table class="table-striped table">
             <thead>
               <td>Drink
