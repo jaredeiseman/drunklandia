@@ -208,3 +208,29 @@ td {
 .keyrow {
   display: block;
 }
+
+.filter-checkbox {
+  display: block;
+}
+
+.table-striped > tbody > tr:hover {
+  background-color: rgba(186,54,208, 0.1);
+}
+
+#main-content {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.form-group {
+  font-family: Arvo;
+  font-size: 16px;
+}
+
+#filter-button {
+  font-family: Arvo;
+  font-size: 20px;
+  background-color: rgba(186,54,208, 0.1);
+  border: 1px solid black;
+  width: 100%;
+}
