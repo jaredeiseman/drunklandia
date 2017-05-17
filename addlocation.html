@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/seededData.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -29,8 +30,8 @@
           <form id="add-location">
             <div class="form-group">
               <label for="monday">Monday</label>
-              <select class="form-control" name="monday-start" id="monday-start">
-                <option>N/A</option>
+              <select class="form-control" name="monday-start" id="monday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -43,8 +44,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="monday-end" id="monday-end">
-                <option>N/A</option>
+              <select class="form-control" name="monday-end" id="monday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -60,8 +61,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="tuesday">Tuesday</label>
-              <select class="form-control" name="tuesday-start" id="tuesday-start">
-                <option>N/A</option>
+              <select class="form-control" name="tuesday-start" id="tuesday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -74,8 +75,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="tuesday-end" id="tuesday-end">
-                <option>N/A</option>
+              <select class="form-control" name="tuesday-end" id="tuesday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -91,8 +92,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="Wednesday">Wednesday</label>
-              <select class="form-control" name="wednesday-start" id="wednesday-start">
-                <option>N/A</option>
+              <select class="form-control" name="wednesday-start" id="wednesday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -105,8 +106,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="wednesday-end" id="wednesday-end">
-                <option>N/A</option>
+              <select class="form-control" name="wednesday-end" id="wednesday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -122,8 +123,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="tuesday">Thursday</label>
-              <select class="form-control" name="thursday-start" id="thursday-start">
-                <option>N/A</option>
+              <select class="form-control" name="thursday-start" id="thursday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -136,8 +137,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="thursday-end" id="thursday-end">
-                <option>N/A</option>
+              <select class="form-control" name="thursday-end" id="thursday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -153,8 +154,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="tuesday">Friday</label>
-              <select class="form-control" name="friday-start" id="friday-start">
-                <option>N/A</option>
+              <select class="form-control" name="friday-start" id="friday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -167,8 +168,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="friday-end" id="friday-end">
-                <option>N/A</option>
+              <select class="form-control" name="friday-end" id="friday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -184,8 +185,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="tuesday">Saturday</label>
-              <select class="form-control" name="saturday-start" id="saturday-start">
-                <option>N/A</option>
+              <select class="form-control" name="saturday-start" id="saturday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -198,8 +199,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="saturday-end" id="saturday-end">
-                <option>N/A</option>
+              <select class="form-control" name="saturday-end" id="saturday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -215,8 +216,8 @@
                 <option value="20"> After 2:00 AM</option>
               </select>
               <label for="tuesday">Sunday</label>
-              <select class="form-control" name="sunday-start" id="sunday-start">
-                <option>N/A</option>
+              <select class="form-control" name="sunday-start" id="sunday-start" required>
+                <option></option>
                 <option value="0"> Before 3:00 PM</option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
@@ -229,8 +230,8 @@
                 <option value="11"> 11:00 PM</option>
                 <option value="12"> Midnight</option>
               </select>
-              <select class="form-control" name="sunday-end" id="sunday-end">
-                <option>N/A</option>
+              <select class="form-control" name="sunday-end" id="sunday-end" required>
+                <option></option>
                 <option value="3"> 3:00 PM</option>
                 <option value="4"> 4:00 PM</option>
                 <option value="5"> 5:00 PM</option>
@@ -248,7 +249,7 @@
               <div class="form-group radio">
                 <strong><p>Area:</p></strong>
                 <label>
-                  <input type="radio" name="area" value="nw" id="nw"> Northwest
+                  <input type="radio" name="area" value="nw" id="nw" required> Northwest
                 </label>
                 <label>
                   <input type="radio" name="area" value="ne" id="ne"> Northeast
@@ -278,7 +279,7 @@
               <div class="form-group radio">
                 <strong><p>Pricing:</p></strong>
                 <label>
-                  <input type="radio" name="pricing" value="true" id="low"> $
+                  <input type="radio" name="pricing" value="true" id="low" required> $
                 </label>
                 <label>
                   <input type="radio" name="pricing" value="true" id="medium"> $$
@@ -313,23 +314,23 @@
               </div>
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" name="address" id="address" class="form-control">
+                <input type="text" name="address" id="address" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number" class="form-control">
+                <input type="tel" name="phone-number" id="phone-number" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="link">Link</label>
-                <input type="text" name="link" id="link" class="form-control">
+                <input type="text" name="link" id="link" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="description">Description</label>
-                <input type="text" name="description" id="description" class="form-control">
+                <input type="text" name="description" id="description" class="form-control" required>
               </div>
             </div>
             <input type="submit" id="add-submit">
