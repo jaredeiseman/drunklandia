@@ -187,35 +187,24 @@ td {
   padding-bottom: 20px;
 }
 
+#key {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .key-icon {
-  width: 17%;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 22px;
+  display: inline-block;
 }
 
 .key-text {
   font-family: Arvo;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 8px;
 }
 
-#key {
-  border: 1px solid #ba36d0;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-bottom: 10px;
-}
-
-.table-div img {
-  float: left;
-  width: 15%;
-  clear: both;
-  margin-top: 20px;
-  margin-left: 15px;
-}
-
-.table-div p {
-  float: right;
-  width: 70%;
-  margin-top: 25px;
+.keyrow {
+  display: block;
 }
