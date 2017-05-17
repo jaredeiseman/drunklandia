@@ -200,30 +200,30 @@ $(document).ready(function() {
         $("#address-span").text(location.address);
         $("#phone-span").text(location['phone-number']);
         resetModal();
-        $("#menu-link").append('<a href="' + location['link'] + '">menu link</a>');
+        $("#menu-link").append('<a href="' + location['link'] + '">Menu Link</a>');
         $("#deal").text("Deal: " + location['description']);
         $("#deal").text("Deal: " + location['description']);
 
         if (location['hours']['monday-start'] != "") {
-          $("#schedule").append("<li>" + "Monday: " + location['hours']['monday-start'].convertTime() + " - " + location['hours']['monday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "M: " + location['hours']['monday-start'].convertTime() + " - " + location['hours']['monday-end'].convertTime() + "</li>")
         }
         if (location['hours']['tuesday-start'] != "") {
-          $("#schedule").append("<li>" + "Tuesday: " + location['hours']['tuesday-start'].convertTime() + " - " + location['hours']['tuesday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "T: " + location['hours']['tuesday-start'].convertTime() + " - " + location['hours']['tuesday-end'].convertTime() + "</li>")
         }
         if (location['hours']['wednesday-start'] != "") {
-          $("#schedule").append("<li>" + "Wednesday: " + location['hours']['wednesday-start'].convertTime() + " - " + location['hours']['wednesday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "W: " + location['hours']['wednesday-start'].convertTime() + " - " + location['hours']['wednesday-end'].convertTime() + "</li>")
         }
         if (location['hours']['thursday-start'] != "") {
-          $("#schedule").append("<li>" + "Thursday: " + location['hours']['thursday-start'].convertTime() + " - " + location['hours']['thursday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "Th: " + location['hours']['thursday-start'].convertTime() + " - " + location['hours']['thursday-end'].convertTime() + "</li>")
         }
         if (location['hours']['friday-start'] != "") {
-          $("#schedule").append("<li>" + "Friday: " + location['hours']['friday-start'].convertTime() + " - " + location['hours']['friday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "F: " + location['hours']['friday-start'].convertTime() + " - " + location['hours']['friday-end'].convertTime() + "</li>")
         }
         if (location['hours']['saturday-start'] != "") {
-          $("#schedule").append("<li>" + "Saturday: " + location['hours']['saturday-start'].convertTime() + " - " + location['hours']['saturday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "Sat: " + location['hours']['saturday-start'].convertTime() + " - " + location['hours']['saturday-end'].convertTime() + "</li>")
         }
         if (location['hours']['sunday-start'] != "") {
-          $("#schedule").append("<li>" + "Sunday: " + location['hours']['sunday-start'].convertTime() + " - " + location['hours']['sunday-end'].convertTime() + "</li>")
+          $("#schedule").append("<li>" + "Sun: " + location['hours']['sunday-start'].convertTime() + " - " + location['hours']['sunday-end'].convertTime() + "</li>")
         }
       });
     });
