@@ -310,6 +310,47 @@ td {
   background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
 }
 
+#addLocationForm {
+  display: none;
+}
+
+#add-location-button {
+  font-family: Arvo;
+  font-size: 20px;
+  background-color: rgba(186,54,208, 0.1);
+  border: 1px solid black;
+  width: 100%;
+}
+
+#add-location-button:hover {
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+}
+
+#add-submit {
+  font-family: Arvo;
+  font-size: 20px;
+  background-color: rgba(186,54,208, 0.1);
+  border: 1px solid black;
+  width: 50%;
+}
+
+#add-submit:hover {
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+}
+
+#location-add-h2 {
+  font-family: Tiza;
+  text-shadow: 4px 4px 1px #c2e812;
+}
+
 @media screen and (max-width: 1460px) {
   h1 {
     font-size: 50px;
