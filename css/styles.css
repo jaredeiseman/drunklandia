@@ -13,6 +13,7 @@ h1 {
   color: #000;
   text-shadow: 4px 4px 1px #8af3ff;
   margin-left: 20px;
+  margin-top: 45px;
 }
 
 .about-h2 {
@@ -50,29 +51,44 @@ h1 {
 #header {
   border-bottom: 2px solid black;
   height: 150px;
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   margin-left: 0;
   margin-right: 0;
 }
 
 #nav {
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 #nav li {
   display: inline-block;
   list-style-type: none;
   margin-left: 50px;
+  margin-top: 55px;
   font-size: 25px;
+  background:;
+  float:right;
 }
 
 #nav li a {
   color: #000;
   font-family: Tiza;
+  text-shadow: 4px 4px 1px rgba(186,54,208, .6);
+}
+
+#header a {
+  color: #000;
+  font-family: Tiza;
+}
+
+#header h1 a:hover {
+  text-decoration: none;
+  text-shadow: 4px 4px 1px rgba(186,54,208, .7);
+
 }
 
 #nav li a:hover {
@@ -266,6 +282,7 @@ td {
   background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+  cursor: pointer;
 }
 
 #main-content {
@@ -291,4 +308,32 @@ td {
   background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+}
+
+@media screen and (max-width: 1460px) {
+  h1 {
+    font-size: 50px;
+  }
+  #nav li {
+    font-size: 20px;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  #carousel {
+    display: none;
+  }
+  #call-out-button {
+    font-size: 30px;
+  }
+  #header {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 30px;
+  }
 }
