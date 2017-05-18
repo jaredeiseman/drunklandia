@@ -340,7 +340,7 @@ $(document).ready(function() {
         $("#address-span").text(location.address);
         $("#phone-span").text(location['phone-number']);
         resetModal();
-        $("#menu-link").append('<a href="' + location['link'] + '">Menu Link</a>');
+        $("#menu-link").append('<a href="' + location['link'] + '" target="_blank">Menu Link</a>');
         $("#deal").text("Deal: " + location['description']);
         $("#deal").text("Deal: " + location['description']);
 
