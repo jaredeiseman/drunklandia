@@ -73,7 +73,19 @@ String.prototype.convertTime = function() {
       showtime = showtime.substr(0, 2) + ":" + endOfString + "pm";
     }
     return showtime;
-  } else if (showtime >= 1200 && showtime < 1300) {
+  } else if (showtime === 1300) {
+    showtime = showtime - 1200;
+    showtime = showtime.toString();
+    //cut off the last 2 characters of the string and save them in endOfString variable
+    //the beginning of the string + ":" + endOfString + "pm"
+    var endOfString = showtime.slice(-2);
+    if (showtime.length === 3) {
+      showtime = showtime.substr(0, 1) + ":" + endOfString + "pm";
+    } else {
+      showtime = showtime.substr(0, 2) + ":" + endOfString + "pm";
+    }
+    return showtime;
+  } else if (showtime >= 1200 && showtime <= 1300) {
     showtime = showtime.toString();
     var endOfString = showtime.slice(-2);
     if (showtime.length === 3) {
@@ -385,6 +397,10 @@ $(document).ready(function() {
     $("#addLocationForm").hide();
     $('#location-results').empty();
     displayData(data.locations);
+    $('#add-location').find('input, select').each(function() {
+      $(this).val("");
+      $(this).prop('checked', false);
+    });
   });
 
   $("#add-location-button").click(function() {
