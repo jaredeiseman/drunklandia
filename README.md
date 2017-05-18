@@ -27,7 +27,7 @@ OR you can:
 * Select specific filters on the left-hand side and click 'Filter Your Search' to see bars that full under those filters
 
 ## Bugs:
-The only known bug at this time happens when the user filters using multiple categories at one time. The page will output everything that applies for each of those categories, not just locations where those categories intersect.
+When choosing an hour, but no other filter options, the app will fail to display the appropriate results. Due to time constraints this bug is unresolved but will alert the user of the need to pick at least one other option.
 
 ## Support:
 If you experience any difficulties, feel free to contact any of the developers:

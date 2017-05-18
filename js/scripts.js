@@ -200,6 +200,10 @@ Data.prototype.filterResultsFromForm = function(form) {
   }
 
   if (formData.hour !== "") {
+    if (formData.areas.length === 0 && formData.pricings.length === 0 && formData['other-amenities'].length === 0) {
+      alert('Please select at least one other option');
+      return;
+    }
     var days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
     var thing2 = [];
     // console.log(formData.hour);
@@ -212,6 +216,7 @@ Data.prototype.filterResultsFromForm = function(form) {
     });
     toDisplay = removeDuplicates(thing2, 'name');
   }
+
 
   return toDisplay;
 }
@@ -287,6 +292,7 @@ function getFilterFormData($form){
 $(document).ready(function() {
   //UI Functions
   function displayData (locations) {
+    $('#error-message').remove();
     locations.forEach(function(location, index) {
       $('#location-results').append('<tr id="item-' + index + '"class="location-panel">' +
         '<td class="food-drink">' + //conditional image
@@ -380,7 +386,8 @@ $(document).ready(function() {
     if (toDisplay.length !== 0) {
       displayData(toDisplay);
     } else {
-      $('#main-content').append('<h2 class="text-center lead">There are no locations that match your search criteria</h2>');
+      $('#error-message').remove();
+      $('#main-content').append('<h2 class="text-center lead" id="error-message">There are no locations that match your search criteria</h2>');
     }
   });
 
