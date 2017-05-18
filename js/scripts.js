@@ -257,7 +257,7 @@ function getFormData($form){
     $.map(unindexed_array, function(n, i){
         indexed_array[n['name']] = n['value'];
     });
-
+    console.log(indexed_array);
     return indexed_array;
 }
 
@@ -308,10 +308,10 @@ $(document).ready(function() {
         '<td class="amenities">' + //conditional images for amenities
         '</td>' +
         '</tr>');
-      if (location['has-drink'] === true) {
+      if (location['has-drink'] === true || location['has-drink'] === "true") {
         $('#item-' + index + ' .food-drink').first().append('<img src="img/drinkicon.ico" class="img-responsive" alt="" />');
       }
-      if (location['has-food'] === true) {
+      if (location['has-food'] === true || location['has-food'] === "true") {
         $('#item-' + index + ' .food-drink').last().append('<img src="img/foodicon.png" class="img-responsive" alt="" />');
       }
       switch(location.pricing) {
