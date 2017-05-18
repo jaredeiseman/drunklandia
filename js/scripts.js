@@ -106,38 +106,113 @@ String.prototype.convertTime = function() {
   }
 }
 
+function intersect (arr1, arr2) {
+  var result = [];
+  arr1.forEach(function(obj1) {
+    arr2.forEach(function(obj2) {
+      if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
+        result.push(obj2);
+      }
+    });
+  });
+  return result;
+}
+
+function removeDuplicates(arr, prop) {
+     var new_arr = [];
+     var lookup  = {};
+     for (var i in arr) {
+         lookup[arr[i][prop]] = arr[i];
+     }
+     for (i in lookup) {
+         new_arr.push(lookup[i]);
+     }
+     return new_arr;
+ }
+
 Data.prototype.filterResultsFromForm = function(form) {
   var formData = getFilterFormData(form);
   var toDisplay = [];
-  var holder = "";
+  var areasArray = [];
+  var pricingsArray = [];
+  var amenitiesArray = [];
+  var arr1 = [];
 
-
-  //gather input into arrays
-
-  //loop through each area item in the input array pushing each match into toDisplay
-  //loop through the pricing input array
-
-  //iterate over all locations
-  this.locations.forEach(function(location, index) {
-    for (var key in formData) {
-      holder = key.replace(/[0-9]/g, '');
-      if (holder !== 'other-amenities') {
-        if (location[holder].toLowerCase() === formData[key].toLowerCase()) {
-          //push that matching object to the toDisplay array
-          toDisplay.push(location);
-        }
+  formData.areas.forEach(function(area) {
+    locations.forEach(function(location) {
+      if (area === location.area) {
+        areasArray.push(location);
       }
-      for (var i = 0; i < location[holder].length; i++) {
-        if (location[holder][i].toLowerCase() === formData[key].toLowerCase()) {
-          toDisplay.push(location);
-        }
+    });
+  });
+
+  formData.pricings.forEach(function(pricing) {
+    locations.forEach(function(location) {
+      if (pricing === location.pricing) {
+        pricingsArray.push(location);
       }
-    }
+    });
   });
-  //remove duplicate entries from toDisplay
-  toDisplay = toDisplay.filter(function (item, index, inputArray) {
-    return inputArray.indexOf(item) == index;
+
+  formData['other-amenities'].forEach(function(amenity) {
+    locations.forEach(function(location) {
+      if (location['other-amenities'].includes(amenity)) {
+        amenitiesArray.push(location);
+      }
+    });
   });
+
+  amenitiesArray = removeDuplicates(amenitiesArray, "name");
+
+  var counter = 0;
+  var thing = [];
+  amenitiesArray.forEach(function(amenity, index2) {
+    formData['other-amenities'].forEach(function(amenityTest, index) {
+      if (amenity['other-amenities'].includes(amenityTest)) {
+        counter++;
+      }
+      if (index + 1 === formData['other-amenities'].length) {
+        if (counter === formData['other-amenities'].length) {
+          thing.push(amenity);
+        }
+        counter = 0;
+      }
+    });
+  });
+
+  amenitiesArray = thing;
+
+  if (areasArray.length > 0 && pricingsArray.length > 0 && amenitiesArray.length > 0) {
+    arr1 = intersect(areasArray, pricingsArray);
+    toDisplay = intersect(arr1, amenitiesArray);
+  } else if (areasArray.length > 0 && pricingsArray.length > 0) {
+    toDisplay = intersect(areasArray, pricingsArray);
+  } else if (pricingsArray.length > 0 && amenitiesArray.length > 0) {
+    toDisplay = intersect(pricingsArray, amenitiesArray);
+  } else if (amenitiesArray.length > 0 && areasArray.length > 0) {
+    toDisplay = intersect(amenitiesArray, areasArray);
+  } else if (areasArray.length > 0) {
+    toDisplay = areasArray;
+  } else if (pricingsArray.length > 0) {
+    toDisplay = pricingsArray;
+  } else if (amenitiesArray.length > 0) {
+    toDisplay = intersect(amenitiesArray, amenitiesArray);
+  }
+
+  if (formData.hour !== "") {
+    var days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    var thing2 = [];
+    // console.log(formData.hour);
+    days.forEach(function(day) {
+      toDisplay.forEach(function(location) {
+        if (formData.hour >= location.hours[day + '-start'] && formData.hour <= location.hours[day + '-end']) {
+          thing2.push(location);
+        }
+      });
+    });
+    toDisplay = removeDuplicates(thing2, 'name');
+  }
+
   return toDisplay;
 }
 
@@ -183,18 +258,25 @@ function getFormData($form){
 
 function getFilterFormData($form){
   var unindexed_array = $form.serializeArray();
-  var indexed_array = {};
+  var indexed_array = {
+    areas: [],
+    pricings: [],
+    "other-amenities": [],
+    hour: ''
+  };
 
   $.map(unindexed_array, function(n, i){
-    // console.log(n['name']);
     if (n['name'] === 'area') {
-      indexed_array[n['name'] + i] = n['value'];
+      indexed_array.areas.push(n['value']);
     }
     if (n['name'] === 'other-amenities') {
-      indexed_array[n['name'] + i] = n['value'];
+      indexed_array['other-amenities'].push(n['value']);
     }
     if (n['name'] === 'pricing') {
-      indexed_array[n['name'] + i] = n['value'];
+      indexed_array.pricings.push(n['value']);
+    }
+    if(n['name'] === 'hour') {
+      indexed_array.hour = n['value'];
     }
   });
 
@@ -298,7 +380,7 @@ $(document).ready(function() {
     if (toDisplay.length !== 0) {
       displayData(toDisplay);
     } else {
-      displayData(data.locations);
+      $('#main-content').append('<h2 class="text-center lead">There are no locations that match your search criteria</h2>');
     }
   });
 
@@ -318,19 +400,12 @@ $(document).ready(function() {
     $('#add-location').find('input, select').each(function() {
       $(this).val("");
       $(this).prop('checked', false);
-      // $('#add-submit').text('Submit');
     });
-    // $('#add-location').find('select').each(function() {
-    //   $(this).val("");
-    // });
-    // $('#add-location').find('input').each(function() {
-    //   $(this).prop('checked', false);
-    // });
   });
 
   $("#add-location-button").click(function() {
     $("#results-content").hide();
     $('#key').hide();
     $("#addLocationForm").show();
-  })
+  });
 });
